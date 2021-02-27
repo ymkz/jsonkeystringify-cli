@@ -1,0 +1,51 @@
+{
+  "private": true,
+  "engines": {
+    "node": "14.x"
+  },
+  "scripts": {
+    "build": "next build",
+    "codecheck": "prettier --check .",
+    "dev": "next dev",
+    "format": "prettier --write .",
+    "lint": "npm run typecheck && npm run codecheck",
+    "start": "next start",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "chardet": "x.x.x",
+    "cors": "x.x.x",
+    "dayjs": "x.x.x",
+    "mongodb": "x.x.x",
+    "nanoid": "x.x.x",
+    "next": "x.x.x",
+    "next-auth": "x.x.x",
+    "next-seo": "x.x.x",
+    "node-html-parser": "x.x.x",
+    "react": "x.x.x",
+    "react-dom": "x.x.x",
+    "redaxios": "x.x.x",
+    "swr": "x.x.x"
+  },
+  "devDependencies": {
+    "@types/cors": "x.x.x",
+    "@types/mongodb": "x.x.x",
+    "@types/next-auth": "x.x.x",
+    "@types/node": "x.x.x",
+    "@types/react": "x.x.x",
+    "next-secure-headers": "x.x.x",
+    "prettier": "x.x.x",
+    "prettier-plugin-organize-imports": "x.x.x",
+    "prettier-plugin-pkg": "x.x.x",
+    "prettier-plugin-style-order": "x.x.x",
+    "typescript": "x.x.x",
+    "typescript-plugin-css-modules": "x.x.x"
+  },
+  "prettier": {
+    "semi": false,
+    "singleQuote": true
+  },
+  "volta": {
+    "node": "14.15.5"
+  }
+}

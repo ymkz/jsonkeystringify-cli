@@ -1,0 +1,19 @@
+name: healthcheck
+on:
+  push:
+    branches:
+      - $default-branch
+env:
+  CI: true
+  TZ: Asia/Tokyo
+jobs:
+  all:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: denolib/setup-deno@v2.3.0
+        with:
+          deno-version: v1.7.5
+      - run: make dev
+      - run: make test
+      - run: make build
