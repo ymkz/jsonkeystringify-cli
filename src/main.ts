@@ -1,5 +1,4 @@
-import { parse } from "https://deno.land/std@0.88.0/flags/mod.ts";
-import { exists } from "https://deno.land/std@0.88.0/fs/exists.ts";
+import { parse, exists } from "./deps.ts";
 import { jsonkeystringify } from "./helpers.ts";
 
 const parsedArgs = parse(Deno.args);
