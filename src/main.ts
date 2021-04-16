@@ -12,11 +12,11 @@ if (!file || !(await exists(file))) {
 
 const content = await Deno.readTextFile(file);
 const json = JSON.parse(content);
-const targetObj = json[key];
+const target = json[key];
 
-if (!targetObj) {
+if (!target) {
   console.error("Error: No key found.");
   Deno.exit(1);
 }
 
-console.log(jsonkeystringify(targetObj));
+console.log(jsonkeystringify(target));
