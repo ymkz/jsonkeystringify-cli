@@ -12,5 +12,6 @@ jobs:
         with:
           deno-version: v1.x
       - run: make dev
+      - run: make lint
       - run: make test
       - run: make build
